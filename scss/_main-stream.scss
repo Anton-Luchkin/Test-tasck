@@ -1,0 +1,102 @@
+.main-stream {
+  max-width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 10px 85px 10px;
+
+  @include for-size(phone-only) {
+    padding: 15px 10px 15px 10px;
+  }
+
+  // .main-stream__title
+  &__title {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    color: #c4c4c4;
+  }
+
+  // .main-stream__subtitle
+  &__subtitle {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 40px;
+
+    &::after {
+      content: url(../img/star.png);
+      display: block;
+      width: 140px;
+      height: 26px;
+      margin: 8px auto;
+    }
+  }
+
+  // .main-stream__wrapper
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  // .main-stream__route
+  &__route {
+    width: 33.33%;
+    height: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &-border {
+      border-left: 1px solid #2f80ed;
+      border-right: 1px solid #2f80ed;
+    }
+  }
+
+  /// .main-stream__img
+  &__img {
+    width: 70px;
+    height: 70px;
+  }
+
+  // .main-stream__name
+  &__name {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 40px;
+
+    &:hover {
+      cursor: pointer;
+      color: #2f80ed;
+    }
+
+    @include for-size(phone-only) {
+      font-size: 12px;
+      line-height: 12px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.triangle {
+  display: none;
+  position: absolute;
+  top: 229px;
+
+  @include for-size(phone-only) {
+    top: 159px;
+  }
+}

@@ -1,0 +1,122 @@
+.about {
+  background-image: url("../img/about-img.png");
+  max-width: 1440px;
+  height: 618px;
+  margin: 0 auto;
+  position: relative;
+  background-size: cover;
+
+  @include for-size(desktop-down) {
+    height: 500px;
+  }
+  @include for-size(tablet-landscape-down) {
+    height: 450px;
+  }
+
+  @include for-size(tablet-portrait-down) {
+    height: 400px;
+  }
+  @include for-size(phone-only) {
+    height: 350px;
+    padding-top: 100px;
+  }
+
+  // .about__text
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 429px;
+    position: absolute;
+    top: 137px;
+    right: 132px;
+
+    @include for-size(desktop-down) {
+      top: 130px;
+      right: 50px;
+    }
+
+    @include for-size(tablet-landscape-down) {
+      width: 50%;
+      height: 50%;
+      margin: auto;
+      top: 30px;
+      bottom: 0;
+    }
+
+    @include for-size(phone-only) {
+      width: 320px;
+      align-items: center;
+      position: static;
+    }
+  }
+
+  // .about__title
+  &__title {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #2f80ed;
+
+    @include for-size(tablet-portrait-down) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    @include for-size(phone-only) {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  // .about__subtitle
+  &__subtitle {
+    font-family: "PF Din Text Cond Pro", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 55px;
+    color: #000000;
+    margin-bottom: 64px;
+    text-align: right;
+
+    @include for-size(tablet-landscape-down) {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 55px;
+    }
+
+    @include for-size(tablet-portrait-down) {
+      font-size: 33px;
+      margin-bottom: 45px;
+    }
+
+    @include for-size(phone-only) {
+      font-size: 30px;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+
+  // .about__btn
+  &__btn {
+    background: #2f80ed;
+    border: 1px solid #2f80ed;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 7px 59px;
+  }
+}
