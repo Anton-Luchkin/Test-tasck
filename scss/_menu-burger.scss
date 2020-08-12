@@ -35,16 +35,16 @@
       bottom: 0;
     }
 
-    &.active span {
+    &.active-burger span {
       transform: scale(0);
     }
 
-    &.active::before {
+    &.active-burger::before {
       transform: rotate(45deg);
       top: 9px;
     }
 
-    &.active::after {
+    &.active-burger::after {
       transform: rotate(-45deg);
       bottom: 9px;
     }

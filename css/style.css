@@ -224,7 +224,7 @@ h6 {
   }
 }
 
-.header__navigation.active {
+.header__navigation.active__burger-menu {
   top: 0;
 }
 
@@ -594,16 +594,16 @@ h6 {
   .header__burger::after {
     bottom: 0;
   }
-  .header__burger.active span {
+  .header__burger.active-burger span {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
-  .header__burger.active::before {
+  .header__burger.active-burger::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 9px;
   }
-  .header__burger.active::after {
+  .header__burger.active-burger::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     bottom: 9px;

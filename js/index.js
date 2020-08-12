@@ -24,8 +24,8 @@ nameRheumatology.addEventListener('click', onClickRheumatology);
 
 // Функция меню бургера
 function onClickBurger() {
-   burgerBtn.classList.toggle("active");
-   menu.classList.toggle("active");
+   burgerBtn.classList.toggle("active-burger");
+   menu.classList.toggle("active__burger-menu");
    body.classList.toggle('lock');
 }
 
